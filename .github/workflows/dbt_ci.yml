@@ -41,7 +41,7 @@ jobs:
       - name: Install dbt packages
         run: |
           cd dbt_project
-          dbt deps
+          dbt deps --upgrade
 
       - name: Run dbt parse (Validate Syntax)
         run: |
