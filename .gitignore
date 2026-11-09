@@ -1,0 +1,10 @@
+profiles.yml
+data/
+*.csv
+logs/
+credentials/
+*.json
+.env
+venv/
+dbt_packages/
+target/
