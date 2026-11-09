@@ -1,0 +1,12 @@
+olist_cloud:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "olist-cloud-migration-514202"
+      dataset: analytics
+      threads: 4
+      keyfile: "/path/to/your/gcp-key.json"
+      timeout_seconds: 300
+      location: US

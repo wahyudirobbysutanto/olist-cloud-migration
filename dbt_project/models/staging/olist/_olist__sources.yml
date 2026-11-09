@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: olist
+    database: olist-cloud-migration-514202
+    schema: raw
+    tables:
+      - name: orders
+      - name: customers
+      - name: order_items
+      - name: products
+      - name: sellers
+      - name: payments
+      - name: reviews
+      - name: geolocation
+      - name: category_translation
