@@ -2,7 +2,13 @@
     config(
         materialized='incremental',
         unique_key=['order_id', 'order_item_id'],
-        on_schema_change='append_new_columns'
+        on_schema_change='append_new_columns',
+        partition_by={
+        "field": "order_purchase_timestamp",
+        "data_type": "timestamp",
+        "granularity": "day"
+        },
+        cluster_by=["customer_id", "product_id"]
     )
     }}
 
